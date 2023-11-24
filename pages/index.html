@@ -48,8 +48,15 @@
                             <a href="#" class="nav-link">Контакти</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Профил</a>
+                            <a href="profile.html" class="nav-link">Профил</a>
                         </li>
+                        <button
+                            class="btn btn-secondary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#login"
+                        >
+                            Вход
+                        </button>
                     </ul>
                 </div>
             </div>
@@ -57,6 +64,52 @@
 
         <!-- NAVBAR -->
         <!-- MAIN SECTION -->
+        <!-- LOGIN modal -->
+        <div
+            class="modal fade"
+            id="login"
+            tabindex="-1"
+            aria-labelledby="modal-title"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <di class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Вход</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="modal-email" class="form-label"
+                            >Email:</label
+                        >
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="modal-email"
+                            placeholder="name@gmail.com"
+                        />
+                        <label for="modal-passwod" class="form-label">
+                            Password:
+                        </label>
+                        <input
+                            type="password"
+                            id="modal-password"
+                            class="form-control"
+                            placeholder="*********"
+                        />
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Вход</button>
+                    </div>
+                </di>
+            </div>
+        </div>
+        <!-- LOGIN modal -->
         <section id="main">
             <div class="container-lg">
                 <div class="row justify-content-center align-items-center mb-6">
@@ -149,78 +202,165 @@
                             Клиентите за нас...
                         </h2>
                     </div>
+
                     <div class="row justify-content-center">
                         <div class="col-md-7">
-                            <div class="list-group text-muted">
-                                <div class="list-group-item py-4">
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <h5 class="mb-1 fs-4 text-muted">
-                                        Креативни, винаги обръщат внимание на
-                                        детайла
-                                    </h5>
-                                    <p class="mb-1 text-muted">
-                                        Нашата компания използва услугите на DS
-                                        Design и сме впечатлени от тяхната
-                                        професионалност и бързина. Екипът им се
-                                        отличава с креативност и внимание към
-                                        детайла. Работим с тях редовно за
-                                        изработка на различни рекламни материали
-                                        и винаги сме доволни от резултатите.
-                                        Бихме ги препоръчали на всеки, който
-                                        търси надежден и бърз партньор в
-                                        областта на печатната реклама.
-                                    </p>
-                                    <small class="text-muted"
-                                        >-Атанас Георгиев</small
-                                    >
+                            <div
+                                id="testimonials-carousel"
+                                class="carousel slide"
+                            >
+                                <div class="carousel-indicators">
+                                    <button
+                                        type="button"
+                                        data-bs-target="#testimonials-carousel"
+                                        data-bs-slide-to="0"
+                                        class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#testimonials-carousel"
+                                        data-bs-slide-to="1"
+                                        aria-label="Slide 2"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        data-bs-target="#testimonials-carousel"
+                                        data-bs-slide-to="2"
+                                        aria-label="Slide 3"
+                                    ></button>
                                 </div>
-                                <div class="list-group-item py-4">
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <h5 class="mb-1 fs-4 text-muted">
-                                        Най-добрата фирма, с която съм работил
-                                    </h5>
-                                    <p class="mb-1 text-muted">
-                                        Екипът беше професионален, креативен и
-                                        винаги на разположение за всякакви
-                                        въпроси. Резултатът от нашата рекламна
-                                        кампания беше точно такъв, какъвто си
-                                        представяхме. Благодарим ви за
-                                        висококачествената работа!
-                                    </p>
-                                    <small class="text-muted"
-                                        >-Иван Иванов</small
-                                    >
+                                <div class="carousel-inner p-5 text-center">
+                                    <div class="carousel-item active">
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <h5 class="mb-1 fs-4 text-muted">
+                                            Креативни, винаги обръщат внимание
+                                            на детайла
+                                        </h5>
+                                        <p class="mb-1 text-muted">
+                                            Нашата компания използва услугите на
+                                            DS Design и сме впечатлени от
+                                            тяхната професионалност и бързина.
+                                            Екипът им се отличава с креативност
+                                            и внимание към детайла. Работим с
+                                            тях редовно за изработка на различни
+                                            рекламни материали и винаги сме
+                                            доволни от резултатите. Бихме ги
+                                            препоръчали на всеки, който търси
+                                            надежден и бърз партньор в областта
+                                            на печатната реклама.
+                                        </p>
+                                        <small class="text-muted"
+                                            >-Атанас Георгиев</small
+                                        >
+                                    </div>
+                                    <div class="carousel-item">
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <h5 class="mb-1 fs-4 text-muted">
+                                            Най-добрата фирма, с която съм
+                                            работил
+                                        </h5>
+                                        <p class="mb-1 text-muted">
+                                            Екипът беше професионален, креативен
+                                            и винаги на разположение за всякакви
+                                            въпроси. Резултатът от нашата
+                                            рекламна кампания беше точно такъв,
+                                            какъвто си представяхме. Благодарим
+                                            ви за висококачествената работа!
+                                        </p>
+                                        <small class="text-muted"
+                                            >-Иван Иванов</small
+                                        >
+                                    </div>
+                                    <div class="carousel-item">
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-fill text-primary"
+                                        ></i>
+                                        <i
+                                            class="bi bi-star-half text-primary"
+                                        ></i>
+                                        <h5 class="mb-1 fs-4 text-muted">
+                                            Отлична комуникация и бърза доставка
+                                        </h5>
+                                        <p class="mb-1 text-muted">
+                                            Сътрудничеството с DS Design беше
+                                            прекрасно. Те ни предоставиха
+                                            иновативни идеи за нашата реклама,
+                                            като същевременно осигуриха високо
+                                            качество на печата. Изключително сме
+                                            доволни от резултатите и вече
+                                            разглеждаме следващите проекти с
+                                            нетърпение.
+                                        </p>
+                                        <small class="text-muted"
+                                            >-Мария Петрова</small
+                                        >
+                                    </div>
                                 </div>
-                                <div class="list-group-item py-4">
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-fill text-primary"></i>
-                                    <i class="bi bi-star-half text-primary"></i>
-                                    <h5 class="mb-1 fs-4 text-muted">
-                                        Отлична комуникация и бърза доставка
-                                    </h5>
-                                    <p class="mb-1 text-muted">
-                                        Сътрудничеството с DS Design беше
-                                        прекрасно. Те ни предоставиха иновативни
-                                        идеи за нашата реклама, като
-                                        същевременно осигуриха високо качество
-                                        на печата. Изключително сме доволни от
-                                        резултатите и вече разглеждаме
-                                        следващите проекти с нетърпение.
-                                    </p>
-                                    <small class="text-muted"
-                                        >-Мария Петрова</small
+                                <button
+                                    class="carousel-control-prev"
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="prev"
+                                >
+                                    <span
+                                        class="carousel-control-prev-icon"
+                                        aria-hidden="true"
+                                    ></span>
+                                    <span class="visually-hidden"
+                                        >Previous</span
                                     >
-                                </div>
+                                </button>
+                                <button
+                                    class="carousel-control-next"
+                                    type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="next"
+                                >
+                                    <span
+                                        class="carousel-control-next-icon"
+                                        aria-hidden="true"
+                                    ></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
                         </div>
                     </div>
