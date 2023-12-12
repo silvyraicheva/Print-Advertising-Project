@@ -19,10 +19,58 @@
     </head>
 
     <body>
+        <!-- LOGIN modal -->
+        <div
+            class="modal fade"
+            id="login"
+            tabindex="-1"
+            aria-labelledby="modal-title"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <di class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Вход</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="modal-email" class="form-label"
+                            >Имейл:</label
+                        >
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="modal-email"
+                            placeholder="name@gmail.com"
+                        />
+                        <label for="modal-passwod" class="form-label">
+                            Парола:
+                        </label>
+                        <input
+                            type="password"
+                            id="modal-password"
+                            class="form-control"
+                            placeholder="*********"
+                        />
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Вход</button>
+                    </div>
+                </di>
+            </div>
+        </div>
+        <!-- LOGIN modal -->
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-md bg-primary navbar-dark">
             <div class="container-md">
-                <a href="index.html" class="navbar-brand">DS Design</a>
+                <a href="index.html" class="navbar-brand"
+                    ><img src="/img/logo.svg" alt=""
+                /></a>
                 <!-- toggle button for mobile view -->
                 <button
                     class="navbar-toggler"
@@ -42,13 +90,15 @@
                 >
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Продукти</a>
+                            <a href="#" class="nav-link text-white">Продукти</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Контакти</a>
+                            <a href="#" class="nav-link text-white">Контакти</a>
                         </li>
                         <li class="nav-item">
-                            <a href="profile.html" class="nav-link">Профил</a>
+                            <a href="profile.html" class="nav-link text-white"
+                                >Профил</a
+                            >
                         </li>
                         <button
                             class="btn btn-secondary"
@@ -64,169 +114,121 @@
 
         <!-- NAVBAR -->
         <!-- MAIN SECTION -->
-        <!-- LOGIN modal -->
-        <div
-            class="modal fade"
-            id="login"
-            tabindex="-1"
-            aria-labelledby="modal-title"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog">
-                <di class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal-title">Вход</h5>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">
-                        <label for="modal-email" class="form-label"
-                            >Email:</label
-                        >
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="modal-email"
-                            placeholder="name@gmail.com"
-                        />
-                        <label for="modal-passwod" class="form-label">
-                            Password:
-                        </label>
-                        <input
-                            type="password"
-                            id="modal-password"
-                            class="form-control"
-                            placeholder="*********"
-                        />
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary">Вход</button>
-                    </div>
-                </di>
-            </div>
-        </div>
-        <!-- LOGIN modal -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-9">
-                    <div class="card mt-xl-0 my-3">
-                        <div class="row pt-3 mx-0 text-center">
-                            <div class="col-lg-5 col-3 text-lg-start">
-                                <img
-                                    src="/img/profile-pic.jpg"
-                                    alt="profile-photo"
-                                    class="img-thumbnail"
-                                />
-                                <a href="" class="btn btn-primary"
-                                    >Променете логото</a
-                                >
-                            </div>
-                            <div class="col-lg col-12 text-lg-start">
-                                <div class="h5">Иван Иванов</div>
-                                <div>Гуава ООД</div>
-                            </div>
+        <div class="container bg-white my-3 p-3">
+            <h1 class="display-5 text-center">Редактиране на профил</h1>
+            <form class="row g-3">
+                <div class="col-md-6 col-sm-12">
+                    <label for="first-name" class="form-label">Име</label>
+                    <input
+                        type="text"
+                        id="first-name"
+                        class="form-control"
+                        value="Иван"
+                        aria-label="First name"
+                    />
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="last-name" class="form-label">Фамилия</label>
+                    <input
+                        type="text"
+                        id="last-name"
+                        class="form-control"
+                        value="Иванов"
+                        aria-label="Last name"
+                    />
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="pass" class="form-label">Парола</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="pass"
+                        value="*************"
+                    />
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="new-pass" class="form-label">Нова парола</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="new-pass"
+                        placeholder="*************"
+                    />
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="repeat-pass" class="form-label"
+                        >Повтори парола</label
+                    >
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="repeat-pass"
+                        placeholder="*************"
+                    />
+                </div>
+                <div
+                    class="row justify-content-between align-items-center my-3"
+                >
+                    <div class="col-md-3 col-sm-12">
+                        <div class="mb-2">
+                            <img
+                                src="/img/client-logo2.png"
+                                alt="client logo"
+                                class="img-thumbnail"
+                            />
                         </div>
-                        <div class="card-body mt-3">
-                            <ul class="nav nav-tabs mb-3">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link active"
-                                        >Настройки</a
-                                    >
-                                </li>
-                            </ul>
-                            <div class="row px-1">
-                                <div class="col-6 px-3">
-                                    <label for="first-name">Име</label>
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        value="Иван"
-                                        id="first-name"
-                                    />
-                                </div>
-                                <div class="col-6 px-3">
-                                    <label for="last-name">Фамилия</label>
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        value="Иванов"
-                                        id="last-name"
-                                    />
-                                </div>
-                            </div>
-                            <div class="row px-1">
-                                <div class="col px-3">
-                                    <label for="edit-email">Email</label>
-                                    <input
-                                        type="email"
-                                        class="form-control"
-                                        value="ivan.ivanov@guava.com"
-                                        id="edit-email"
-                                    />
-                                </div>
-                            </div>
-                            <div class="row px-1">
-                                <div class="col px-3">
-                                    <label for="">Адрес за доставка</label>
-                                    <textarea
-                                        name=""
-                                        id=""
-                                        cols="30"
-                                        rows="4"
-                                        class="form-control"
-                                    >
-гр. Варна, ул. Кестен 12</textarea
-                                    >
-                                </div>
-                            </div>
-                            <div class="row px-1 mt-2">
-                                <div class="col-6 px-3">
-                                    <div class="fw-bold">Промяна на парола</div>
-                                    <label for="">Стара парола</label>
-                                    <input
-                                        type="password"
-                                        class="form-control"
-                                        value="123456"
-                                    />
-                                    <label for="">Нова парола</label>
-                                    <input
-                                        type="password"
-                                        class="form-control"
-                                        value="123456"
-                                    />
-                                    <label for="">Нова парола</label>
-                                    <input
-                                        type="password"
-                                        class="form-control"
-                                        value="123456"
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                class="row px-1 justify-content-start justify-content-lg-end mt-4"
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-image"></i>
+                            Промени лого
+                        </button>
+                    </div>
+
+                    <div class="col-md-9 col-sm-12">
+                        <div class="col-12">
+                            <label for="organisation" class="form-label"
+                                >Фирма</label
                             >
-                                <div class="col-auto px-3">
-                                    <a href="" class="btn btn-primary">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        Save Changes
-                                    </a>
-                                </div>
-                                <a href="#" class="btn btn-secondary">
-                                    <i
-                                        class="bi bi-arrow-right-square-fill"
-                                    ></i>
-                                    Изход
-                                </a>
-                            </div>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="organisation"
+                                value="Криейтив 09 ООД"
+                            />
+                        </div>
+                        <div class="col-12">
+                            <label for="address" class="form-label"
+                                >Адрес на фирмата</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="address"
+                                value='бул.  "Княз Борис I" 77, Варна 9002'
+                            />
+                        </div>
+                        <div class="col-12">
+                            <label for="phone" class="form-label"
+                                >Телефон за контакт</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="phone"
+                                value="+359 80000900"
+                            />
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="col-12 text-end">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle-fill"></i>
+                        Запази промените
+                    </button>
+                </div>
+            </form>
         </div>
+
         <!-- MAIN SECTION -->
         <!-- FOOTER -->
         <footer class="text-white text-center text-md-start bg-primary">

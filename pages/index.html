@@ -19,6 +19,52 @@
     </head>
 
     <body>
+        <!-- LOGIN modal -->
+        <div
+            class="modal fade"
+            id="login"
+            tabindex="-1"
+            aria-labelledby="modal-title"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <di class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Вход</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="modal-email" class="form-label"
+                            >Имейл:</label
+                        >
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="modal-email"
+                            placeholder="name@gmail.com"
+                        />
+                        <label for="modal-passwod" class="form-label">
+                            Парола:
+                        </label>
+                        <input
+                            type="password"
+                            id="modal-password"
+                            class="form-control"
+                            placeholder="*********"
+                        />
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Вход</button>
+                    </div>
+                </di>
+            </div>
+        </div>
+        <!-- LOGIN modal -->
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-md bg-primary navbar-dark">
             <div class="container-md">
@@ -68,52 +114,7 @@
 
         <!-- NAVBAR -->
         <!-- MAIN SECTION -->
-        <!-- LOGIN modal -->
-        <div
-            class="modal fade"
-            id="login"
-            tabindex="-1"
-            aria-labelledby="modal-title"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-dialog-centered">
-                <di class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal-title">Вход</h5>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">
-                        <label for="modal-email" class="form-label"
-                            >Email:</label
-                        >
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="modal-email"
-                            placeholder="name@gmail.com"
-                        />
-                        <label for="modal-passwod" class="form-label">
-                            Password:
-                        </label>
-                        <input
-                            type="password"
-                            id="modal-password"
-                            class="form-control"
-                            placeholder="*********"
-                        />
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary">Вход</button>
-                    </div>
-                </di>
-            </div>
-        </div>
-        <!-- LOGIN modal -->
+
         <section id="main">
             <div class="container-lg">
                 <div class="row justify-content-center align-items-center mb-6">
