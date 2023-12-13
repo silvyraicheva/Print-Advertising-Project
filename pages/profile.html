@@ -38,28 +38,56 @@
                             aria-label="Close"
                         ></button>
                     </div>
+
                     <div class="modal-body">
-                        <label for="modal-email" class="form-label"
-                            >Имейл:</label
-                        >
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="modal-email"
-                            placeholder="name@gmail.com"
-                        />
-                        <label for="modal-passwod" class="form-label">
-                            Парола:
-                        </label>
-                        <input
-                            type="password"
-                            id="modal-password"
-                            class="form-control"
-                            placeholder="*********"
-                        />
+                        <form action="#">
+                            <label for="modal-email" class="form-label"
+                                >Имейл:</label
+                            >
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="modal-email"
+                                placeholder="ivan.ivanov@gmail.com"
+                            />
+                            <label for="modal-passwod" class="form-label">
+                                Парола:
+                            </label>
+
+                            <input
+                                type="password"
+                                id="modal-password"
+                                class="form-control"
+                                placeholder="*********"
+                            />
+                            <div
+                                class="row justify-content-center align-items-center mb-6"
+                            >
+                                <div class="col-md-8">
+                                    <div class="form-check">
+                                        <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="rememberMeCheckbox"
+                                            checked
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="rememberMeCheckbox"
+                                            >Запомни ме</label
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>Забравена парола</p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary">Вход</button>
+
+                    <div class="modal-footer text-center">
+                        <p>Нямаш профил? <a href="#">Регистрирай се</a></p>
+                        <button class="btn btn-primary px-3">Вход</button>
                     </div>
                 </di>
             </div>
@@ -114,7 +142,7 @@
 
         <!-- NAVBAR -->
         <!-- MAIN SECTION -->
-        <div class="container bg-white my-3 p-3">
+        <div class="container bg-white my-3 p-3 rounded">
             <h1 class="display-5 text-center">Редактиране на профил</h1>
             <form class="row g-3">
                 <div class="col-md-6 col-sm-12">
