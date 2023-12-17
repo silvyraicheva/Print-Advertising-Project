@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Продукти</title>
+  <link href="../css/main.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <meta name="author" content="Създадено от DS Design">
+  <meta property="og:locale" content="bg_BG">
+  <meta name="description" content="DS Design - Бранд идентичност на реламни материали.">
+  <meta name="keywords" content="DS Design, Print Advertising Agency, Brand Identitty, Environmentally Friendly Branding Materials">
+  <link rel="canonical" href="https://www.ds-design.com/products">
+  <meta property="og:title" content="DS Design - Продукти">
+  <meta property="og:description" content="DS Design - Персонализирани Brand Продукти">
+  <meta property="og:image" content="https://www.ds-design.com/img/DS-LOGO.SVG">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    .custom-hover:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+    <div class="container-md">
+      <a href="index.html" class="navbar-brand">DS Design</a>
+      <!-- toggle button for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar links/tabs -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Продукти</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Контакти</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Профил</a>
+          </li>
+          <li><a href="#" class="btn btn-outline-secondary" data-bs-toggle="offcanvas" data-bs-target="#myshoppingcart"
+              aria-controls="myshoppingcart"><i class="bi bi-cart3"></i>
+              <span class="badge text-bg-secondary">1</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- NAVBAR -->
+
+  <div class="bg-secondary bg-gradient text-center py-5">
+    <h1 class="mb-1 fw-bold">Каталог</h1>
+  </div>
+
+  <div class="container">
+
+    <!-- BREADCRUMBS -->
+    <div style="--bs-breadcrumb-divider: '>';" class="mt-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-door-fill"></i></a></li>
+        <li class="breadcrumb-item active" aria-current="page">Продукти</li>
+      </ol>
+    </div>
+    <!-- BREADCRUMBS -->
+
+    <!-- SEARCH & FILTERS -->
+    <div class="row my-5 justify-content-center">
+      <div class="col-lg-4 mb-2">
+        <div class="input-group">
+          <input type="text" class="form-control border border-primary" placeholder="Търсене">
+          <button class="btn btn-primary"><i class="bi bi-search text-white"></i></button>
+        </div>
+      </div>
+
+      <div class="col-lg-5 mb-2 d-flex justify-content-center">
+        <div class="dropdown me-2">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Категория
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Визитни картички</a></li>
+            <li><a class="dropdown-item" href="#">Календари</a></li>
+            <li><a class="dropdown-item" href="#">Тефтери</a></li>
+            <li><a class="dropdown-item" href="#">Химикали</a></li>
+            <li><a class="dropdown-item" href="#">Хартиени чанти</a></li>
+            <li><a class="dropdown-item" href="#">Брошури</a></li>
+            <li><a class="dropdown-item" href="#">Менюта</a></li>
+            <li><a class="dropdown-item" href="#">Папки</a></li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <label for="price" class="form-label me-3 pt-1">Цена</label>
+          <input type="range" class="form-range" min="0" max="1000" id="price">
+        </div>
+      </div>
+    </div>
+    <!-- SEARCH & FILTERS -->
+
+    <!-- PRODUCTS -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 my-5 text-center">
+      <div class="col">
+        <div class="card border border-primary mb-4 rounded-3 shadow custom-hover">
+          <span class="position-absolute badge bg-primary">Най-купувано</span>
+          <img src="img/business-card.png" alt="Business Card" class="card-img-top">
+          <div class="card-body">
+            <div class="h4">Визитни картички</div>
+            <small>89.99 лв / 100 бр.</small>
+            <div class="mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <span>(555)</span>
+            </div>
+            <span class="badge text-bg-secondary"><i class="bi bi-tree"></i> Рециклирани материали</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-slash-circle"></i> Антибактериални</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-brush"></i> Онлайн дизайн</span>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#myshoppingcart" aria-controls="myshoppingcart">В кошницата</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border border-primary mb-4 rounded-3 shadow custom-hover">
+          <img src="img/calendar.png" alt="Business Calendar" class="card-img-top">
+          <div class="card-body">
+            <div class="h4">Брандирани календари</div>
+            <small>189.99 лв / 100 бр.</small>
+            <div class="mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <span>(111)</span>
+            </div>
+            <span class="badge text-bg-secondary"><i class="bi bi-tree"></i> Рециклирани материали</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-file-earmark"></i> Гланциран финиш</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-brush"></i> Онлайн дизайн</span>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#myshoppingcart" aria-controls="myshoppingcart">В кошницата</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border border-primary mb-4 rounded-3 shadow custom-hover">
+          <span class="position-absolute badge bg-primary">Безплатен Подарък</span>
+          <img src="img/notebook_pen_pack.png" alt="Notebook and a free pen" class="card-img-top">
+          <div class="card-body">
+            <div class="h4">Tефтери + подарък химикал</div>
+            <del>189.99 лв</del> 149.99 лв / 100 бр.
+            <div class="mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <span>(999)</span>
+            </div>
+            <span class="badge text-bg-secondary"><i class="bi bi-tree"></i> Рециклирани материали</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-gift"></i> Безплатен химикал</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-file-earmark"></i> Твърди корици</span>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#myshoppingcart" aria-controls="myshoppingcart">В кошницата</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border border-primary mb-4 rounded-3 shadow custom-hover">
+          <img src="img/paper_bag.png" alt="Paper bag" class="card-img-top">
+          <span class="position-absolute badge bg-primary">Ново</span>
+          <div class="card-body">
+            <div class="h4">Хартиени чанти</div>
+            <small>69.99 лв / 100 бр.</small>
+            <div class="mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <span>(234)</span>
+            </div>
+            <span class="badge text-bg-secondary"><i class="bi bi-tree"></i> Рециклирани материали</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-arrows-angle-expand"></i> Различни големини</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-handbag"></i> Издръжливи</span>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#myshoppingcart" aria-controls="myshoppingcart">В кошницата</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border border-primary mb-4 rounded-3 shadow custom-hover">
+          <img src="img/flyers.png" alt="Flyers" class="card-img-top">
+          <span class="position-absolute badge bg-primary">Най-добра цена</span>
+          <div class="card-body">
+            <div class="h4">Брошури</div>
+            <del>69.99 лв</del> 49.99 лв / 100 бр.
+            <div class="mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <span>(656)</span>
+            </div>
+            <span class="badge text-bg-secondary"><i class="bi bi-tree"></i> Рециклирани материали</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-file-earmark"></i> Гланциран финиш</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-file-earmark"></i> Матов финиш</span>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#myshoppingcart" aria-controls="myshoppingcart">В кошницата</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border border-primary mb-4 rounded-3 shadow custom-hover">
+          <img src="img/menu.png" alt="Menus" class="card-img-top">
+          <div class="card-body">
+            <div class="h4">Менюта</div>
+            <small>99.99 лв / 100 бр.</small>
+            <div class="mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <span>(211)</span>
+            </div>
+            <span class="badge text-bg-secondary"><i class="bi bi-tree"></i> Рециклирани материали</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-file-earmark"></i> Ламинирани</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-droplet"></i> Водоустойчиви</span>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#myshoppingcart" aria-controls="myshoppingcart">В кошницата</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border border-primary mb-4 rounded-3 shadow custom-hover">
+          <img src="img/notebooks.png" alt="Notebooks" class="card-img-top">
+          <span class="position-absolute badge bg-primary">Топ Продукт</span>
+          <div class="card-body">
+            <div class="h4">Тефтери</div>
+            <small>149.99 лв / 100 бр.</small>
+            <div class="mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <span>(1111)</span>
+            </div>
+            <span class="badge text-bg-secondary"><i class="bi bi-tree"></i> Рециклирани материали</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-file-earmark"></i> Твърди корици</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-brush"></i> Онлайн дизайн</span>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#myshoppingcart" aria-controls="myshoppingcart">В кошницата</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border border-primary mb-4 rounded-3 shadow custom-hover">
+          <img src="img/pens.png" alt="Pens" class="card-img-top">
+          <div class="card-body">
+            <div class="h4">Химикали</div>
+            <small>59.99 лв / 100 бр.</small>
+            <div class="mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <span>(421)</span>
+            </div>
+            <span class="badge text-bg-secondary"><i class="bi bi-palette"></i> Различни цветове</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-pen"></i> Избор на писец</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-eyedropper"></i> Вид мастило</span>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#myshoppingcart" aria-controls="myshoppingcart">В кошницата</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border border-primary mb-4 rounded-3 shadow custom-hover">
+          <img src="img/folders.png" alt="Pens" class="card-img-top">
+          <div class="card-body">
+            <div class="h4">Папки</div>
+            <small>69.99 лв / 100 бр.</small>
+            <div class="mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <span>(123)</span>
+            </div>
+            <span class="badge text-bg-secondary"><i class="bi bi-tree"></i> Рециклирани материали</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-arrows-angle-expand"></i> Различни големини</span>
+            <span class="badge text-bg-secondary"><i class="bi bi-brush"></i> Онлайн дизайн</span>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#myshoppingcart" aria-controls="myshoppingcart">В кошницата</button>
+          </div>
+        </div>
+      </div>
+      <!-- PRODUCTS -->
+    </div>
+
+    <!-- Off Canvas Add to Cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="myshoppingcart" aria-labelledby="mycart">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mycart"><i class="bi bi-cart3"></i> Моята количка (1)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="col">
+          <div class="text-center"><img src="img/cart-product.png" alt="Business Card"></div>
+          <div class="d-flex justify-content-start">
+            <div class="h6 mt-2">Бизнес картички (89.99 лв)</div>
+            <div class="d-flex align-items-center ms-3">
+              <button class="btn btn-outline-primary">-</button>
+              <span class="mx-2">1</span>
+              <button class="btn btn-outline-primary">+</button>
+              <i class="bi bi-trash ms-3"></i>
+            </div>
+          </div>
+        </div>
+        <div class="input-group my-3">
+          <input type="text" class="form-control border border-primary" placeholder="Промо код">
+          <button class="btn btn-primary"><i class="bi bi-check-circle text-white"></i></button>
+        </div>
+        <div class="d-flex mt-4">
+          <div class="h6">Общо:</div>
+          <div class="h6 ms-auto">89.99 лв</div>
+        </div>
+      </div>
+      <div class="offcanvas-footer text-center px-3">
+        <button class="w-100 btn btn-lg btn-outline-primary my-3">Купи</button>
+      </div>
+    </div>
+    <!-- Off Canvas Add to Cart -->
+
+    <!-- pagination -->
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <span class="page-link">Назад</span>
+        </li>
+        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+        <li class="page-item" aria-current="page">
+          <span class="page-link">2</span>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Напред</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- pagination -->
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-white text-center text-md-start bg-primary px-5 mt-5">
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4">
+      <p>&copy; 2023 DS Design, Inc. All rights reserved.</p>
+      <div class="footer-info">
+        <ul class="footer-ul list-unstyled">
+          <li class="mb-1">
+            <span><i class="bi bi-building"></i> бул. "Княз
+              Борис I" 77, Варна 9002</span>
+          </li>
+          <li class="mb-1">
+            <span><i class="bi bi-envelope"></i>
+              ds.design@ue-varna.bg</span>
+          </li>
+          <li class="mb-1">
+            <span><i class="bi bi-telephone"></i> +359
+              80000900</span>
+          </li>
+        </ul>
+      </div>
+      <ul class="list-unstyled d-flex justify-content-center">
+        <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/"><img src="img/facebook-logo.svg"
+              alt="Facebook"></a>
+        </li>
+        <li class="ms-3"><a class="link-body-emphasis" href="https://twitter.com/"><img src="img/x-logo.svg"
+              alt="X"></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/"><img src="img/linkedin-logo.svg"
+              alt="LinkedIn"></a>
+        </li>
+        <li class="ms-3"><a class="link-body-emphasis" href="https://www.youtube.com/"><img src="img/youtube-logo.svg"
+              alt="YouTube"></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- FOOTER -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
